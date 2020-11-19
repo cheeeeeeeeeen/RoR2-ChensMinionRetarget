@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{98E96239-FC6F-4F46-858C-7C6A55BA7554}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChensMinionRetarget", "ChensMinionRetarget.csproj", "{2F4E254B-FBCA-47F3-B32E-06EE50FF850A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F4E254B-FBCA-47F3-B32E-06EE50FF850A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4E254B-FBCA-47F3-B32E-06EE50FF850A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4E254B-FBCA-47F3-B32E-06EE50FF850A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4E254B-FBCA-47F3-B32E-06EE50FF850A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B85BF4C-C4C9-4D0B-A9AC-7E7F62D9D685}
+	EndGlobalSection
+EndGlobal
