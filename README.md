@@ -11,7 +11,7 @@ Take note that assigning a priority target for minions **does not force them to 
 Use **r2modman** mod manager to install this mod.
 
 ## Contact
-- Issue Page: https://github.com/cheeeeeeeeeen/RoR2-ChensBombasticMod/issues
+- Issue Page: https://github.com/cheeeeeeeeeen/RoR2-ChensMinionRetarget/issues
 - Email: `blancfaye7@gmail.com`
 - Discord: `Chen#1218`
 - RoR2 Modding Server: https://discord.com/invite/5MbXZvd
