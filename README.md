@@ -19,5 +19,8 @@ Use **r2modman** mod manager to install this mod.
 
 ## Changelog
 
+**1.0.1**
+- Rollback to `2.5.14` of R2API.
+
 **1.0.0**
 - Implement the mod.
