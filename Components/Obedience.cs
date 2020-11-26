@@ -23,15 +23,5 @@ namespace Chen.MinionRetarget
             if (expiration <= 0 || !target || !healthComponent.alive) Destroy(this);
             expiration -= Time.fixedDeltaTime;
         }
-
-        public static Obedience GetOrCreateComponent(GameObject masterObject)
-        {
-            return masterObject.GetComponent<Obedience>() ?? masterObject.AddComponent<Obedience>();
-        }
-
-        public static Obedience GetOrCreateComponent(CharacterMaster master)
-        {
-            return GetOrCreateComponent(master.gameObject);
-        }
     }
 }

@@ -1,7 +1,9 @@
 ﻿#undef DEBUG
 
 using BepInEx;
-using R2API;
+using Chen.Helpers;
+using Chen.Helpers.GeneralHelpers;
+using Chen.Helpers.UnityHelpers;
 using R2API.Utils;
 using RoR2;
 using RoR2.CharacterAI;
@@ -13,15 +15,15 @@ namespace Chen.MinionRetarget
 {
     [BepInPlugin(ModGuid, ModName, ModVer)]
     [BepInDependency(R2API.R2API.PluginGUID, R2API.R2API.PluginVersion)]
+    [BepInDependency(HelperPlugin.ModGuid, HelperPlugin.ModVer)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
-    [R2APISubmoduleDependency(nameof(ResourcesAPI))]
     public class MinionRetargetPlugin : BaseUnityPlugin
     {
         public const string ModVer =
 #if DEBUG
             "0." +
 #endif
-            "1.0.1";
+            "1.0.2";
 
         public const string ModName = "ChensMinionRetarget";
         public const string ModGuid = "com.Chen.ChensMinionRetarget";
@@ -29,8 +31,7 @@ namespace Chen.MinionRetarget
         private void Awake()
         {
 #if DEBUG
-            Logger.LogWarning("Running test build with debug enabled! Report to CHEN if you're seeing this!");
-            On.RoR2.Networking.GameNetworkManager.OnClientConnect += (self, user, t) => { };
+            Chen.Helpers.GeneralHelpers.MultiplayerTest.Enable(Logger, "Running test build with debug enabled! Report to CHEN if you're seeing this!");
 #endif
 
             On.RoR2.UI.PingIndicator.RebuildPing += PingIndicator_RebuildPing;
@@ -74,14 +75,13 @@ namespace Chen.MinionRetarget
             CharacterBody body = master.GetBody();
             if (!body || !targetBody || targetBody.teamComponent.teamIndex == body.teamComponent.teamIndex) return;
 
-            MinionOwnership[] minionOwnerships = FindObjectsOfType<MinionOwnership>();
-            foreach (MinionOwnership minionOwnership in minionOwnerships)
+            foreach (CharacterMaster minion in master.GetAllMinionComponents<CharacterMaster>())
             {
-                if (!minionOwnership || minionOwnership.ownerMaster != master) continue;
-                GameObject minionMasterObject = minionOwnership.gameObject;
-                Obedience obeyComponent = Obedience.GetOrCreateComponent(minionMasterObject);
-                obeyComponent.expiration = self.pingDuration;
-                obeyComponent.target = self.pingTarget;
+                minion.gameObject.GetOrAddComponent<Obedience>(obeyComponent =>
+                {
+                    obeyComponent.expiration = self.pingDuration;
+                    obeyComponent.target = self.pingTarget;
+                });
             }
         }
     }
