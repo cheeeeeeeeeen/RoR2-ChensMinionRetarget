@@ -29,7 +29,7 @@ namespace Chen.MinionRetarget
 #if DEBUG
             "0." +
 #endif
-            "1.0.2";
+            "1.0.3";
 
         /// <summary>
         /// This mod's name.
