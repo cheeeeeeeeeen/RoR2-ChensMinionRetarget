@@ -13,19 +13,32 @@ using static RoR2.UI.PingIndicator;
 
 namespace Chen.MinionRetarget
 {
+    /// <summary>
+    /// The Unity plugin of the mod.
+    /// </summary>
     [BepInPlugin(ModGuid, ModName, ModVer)]
     [BepInDependency(R2API.R2API.PluginGUID, R2API.R2API.PluginVersion)]
     [BepInDependency(HelperPlugin.ModGuid, HelperPlugin.ModVer)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     public class MinionRetargetPlugin : BaseUnityPlugin
     {
+        /// <summary>
+        /// This mod's version.
+        /// </summary>
         public const string ModVer =
 #if DEBUG
             "0." +
 #endif
             "1.0.2";
 
+        /// <summary>
+        /// This mod's name.
+        /// </summary>
         public const string ModName = "ChensMinionRetarget";
+
+        /// <summary>
+        /// This mod's GUID.
+        /// </summary>
         public const string ModGuid = "com.Chen.ChensMinionRetarget";
 
         private void Awake()

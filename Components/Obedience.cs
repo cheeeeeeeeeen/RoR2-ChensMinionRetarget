@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Chen.MinionRetarget
 {
-    public class Obedience : MonoBehaviour
+    internal class Obedience : MonoBehaviour
     {
         public float expiration = 0;
         public GameObject target = null;
