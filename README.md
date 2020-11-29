@@ -19,6 +19,9 @@ Use **r2modman** mod manager to install this mod.
 
 ## Changelog
 
+**1.0.4**
+- Recompile once again so that it can use the breaking changes of ChensHelpers.
+
 **1.0.3**
 - Recompile so that it can use the breaking changes of ChensHelpers.
 

@@ -1,11 +1,11 @@
 {
   "name": "ChensMinionRetarget",
-  "version_number": "1.0.3",
+  "version_number": "1.0.4",
   "website_url": "https://github.com/cheeeeeeeeeen/RoR2-ChensMinionRetarget",
   "description": "Integrate ChensHelpers again, for the helpers had some breaking changes that needs updating. Assign a priority target for your minions by pinging enemies. They will only acknowledge this command from their owner/master.",
   "dependencies": [
     "bbepis-BepInExPack-5.3.1",
     "tristanmcpherson-R2API-2.5.14",
-    "Chen-ChensHelpers-1.0.1"
+    "Chen-ChensHelpers-1.0.2"
   ]
 }
