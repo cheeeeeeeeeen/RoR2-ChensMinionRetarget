@@ -21,6 +21,9 @@ If one does not want to use a mod manager, then get the DLL from **[Thunderstore
 
 ## Changelog
 
+**1.0.5**
+- Update dependency so that looping of minions from ChensHelpers will cater to this mod's features.
+
 **1.0.4**
 - Recompile once again so that it can use the breaking changes of ChensHelpers.
 

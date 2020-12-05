@@ -10,7 +10,7 @@ namespace Chen.MinionRetarget
 
         private HealthComponent healthComponent = null;
         private CharacterBody body = null;
-        private bool init = true; 
+        private bool init = true;
 
         private void FixedUpdate()
         {
