@@ -2,18 +2,18 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("MinionRetargetTests")]
+[assembly: AssemblyTitle("ChensMinionRetarget.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MinionRetargetTests")]
+[assembly: AssemblyProduct("ChensMinionRetarget.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("fc92f335-1392-4951-a1e9-1f28bfb894ab")]
+[assembly: Guid("2a501e37-35cf-41ed-bae2-0bcb4afb78ed")]
 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
