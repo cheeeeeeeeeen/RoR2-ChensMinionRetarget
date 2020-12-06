@@ -20,7 +20,5 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
       - name: Restore packages
         run: msbuild ChensMinionRetarget.sln -t:restore
-      - name: Restore packages
-        run: msbuild ChensMinionRetarget.sln -t:restore
       - name: Run tests
         run: vstest.console.exe .\ChensMinionRetarget.Tests\Build\ChensMinionRetarget.Tests.dll
