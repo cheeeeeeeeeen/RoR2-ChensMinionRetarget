@@ -1,3 +1,5 @@
+![.NET Unit Test](https://github.com/cheeeeeeeeeen/RoR2-ChensMinionRetarget/workflows/.NET%20Unit%20Test/badge.svg)
+
 # Chen's Minion Retarget
 
 ## Description
