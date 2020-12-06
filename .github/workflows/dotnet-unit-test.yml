@@ -12,14 +12,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Setup MSBuild Path
-        uses: warrenbuckley/Setup-MSBuild@v1
+      - name: Setup MSbuild
+        uses: microsoft/setup-msbuild@v1
       - name: Setup VSTest Path
         uses: darenm/Setup-VSTest@v1
       - name: Setup NuGet
-        uses: NuGet/setup-nuget@v1.0.2
-      - name: Restore packages
-        run: msbuild ChensMinionRetarget.sln -t:restore
+        uses: NuGet/setup-nuget@v1.0.5
       - name: Restore packages
         run: msbuild ChensMinionRetarget.sln -t:restore
       - name: Run tests
