@@ -1,6 +1,4 @@
-﻿#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
-
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace MinionRetargetTests.MinionRetarget
 {
@@ -37,5 +35,3 @@ namespace MinionRetargetTests.MinionRetarget
         }
     }
 }
-
-#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
