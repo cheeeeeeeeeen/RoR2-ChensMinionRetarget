@@ -76,7 +76,6 @@
 cd "$(ProjectDir)Build"
 copy "$(ProjectDir)bin\Debug\" . /y
 del *.xml
-del *.pdb
-del ChensMinionRetarget.dll</PostBuildEvent>
+del *.pdb</PostBuildEvent>
   </PropertyGroup>
 </Project>
