@@ -1,5 +1,6 @@
 NetworkWeaver/
 Build/
+!ChensMinionRetarget.Tests/Build/
 _docs/
 
 ## Ignore Visual Studio temporary files, build results, and
