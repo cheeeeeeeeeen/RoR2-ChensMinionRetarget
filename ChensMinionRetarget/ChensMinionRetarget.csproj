@@ -9,7 +9,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Optimize>true</Optimize>
-    <DocumentationFile>_docs\ChensMinionRetarget.xml</DocumentationFile>
+    <DocumentationFile>..\_docs\ChensMinionRetarget.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
