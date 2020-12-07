@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MinionRetargetTests.MinionRetarget
+namespace ChensMinionRetarget.Tests.MinionRetarget
 {
     [TestClass]
     public class Constants
