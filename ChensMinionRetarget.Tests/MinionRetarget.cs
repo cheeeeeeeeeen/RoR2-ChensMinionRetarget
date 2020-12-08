@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Chen.MinionRetarget.Tests.MinionRetarget
+namespace Chen.MinionRetarget.Tests
 {
     [TestClass]
-    public class Constants
+    public class MinionRetarget
     {
         [TestMethod]
         public void ModVer_Length_ReturnsCorrectFormat()
