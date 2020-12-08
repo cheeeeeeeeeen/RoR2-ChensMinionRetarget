@@ -29,7 +29,7 @@ namespace Chen.MinionRetarget
 #if DEBUG
             "0." +
 #endif
-            "1.0.5";
+            "1.0.6";
 
         /// <summary>
         /// This mod's name.
@@ -56,7 +56,7 @@ namespace Chen.MinionRetarget
         {
             BaseAI.SkillDriverEvaluation skillDriverEval = orig(self);
             Obedience obeyComponent = self.gameObject.GetComponent<Obedience>();
-            if (obeyComponent)
+            if (obeyComponent && obeyComponent.target)
             {
                 Vector3 targetPosition = obeyComponent.target.transform.position;
                 Vector3 selfPosition = self.gameObject.transform.position;
