@@ -33,5 +33,13 @@ namespace Chen.MinionRetarget.Tests
 
             Assert.AreEqual(ModGuid, result);
         }
+
+        [TestMethod]
+        public void DebugCheck_Toggled_ReturnsFalse()
+        {
+            bool result = MinionRetargetPlugin.DebugCheck();
+
+            Assert.IsFalse(result);
+        }
     }
 }

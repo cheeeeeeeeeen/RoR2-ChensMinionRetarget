@@ -8,8 +8,11 @@ using R2API.Utils;
 using RoR2;
 using RoR2.CharacterAI;
 using RoR2.UI;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using static RoR2.UI.PingIndicator;
+
+[assembly: InternalsVisibleTo("ChensMinionRetarget.Tests")]
 
 namespace Chen.MinionRetarget
 {
@@ -96,6 +99,15 @@ namespace Chen.MinionRetarget
                     obeyComponent.target = self.pingTarget;
                 });
             }
+        }
+
+        internal static bool DebugCheck()
+        {
+#if DEBUG
+            return true;
+#else
+            return false;
+#endif
         }
     }
 }
