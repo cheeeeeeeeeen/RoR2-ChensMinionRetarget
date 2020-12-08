@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ChensMinionRetarget.Tests.MinionRetarget
+namespace Chen.MinionRetarget.Tests.MinionRetarget
 {
     [TestClass]
     public class Constants
@@ -8,7 +8,7 @@ namespace ChensMinionRetarget.Tests.MinionRetarget
         [TestMethod]
         public void ModVer_Length_ReturnsCorrectFormat()
         {
-            string result = Chen.MinionRetarget.MinionRetargetPlugin.ModVer;
+            string result = MinionRetargetPlugin.ModVer;
             const int ModVersionCount = 3;
 
             int count = result.Split('.').Length;
@@ -19,7 +19,7 @@ namespace ChensMinionRetarget.Tests.MinionRetarget
         [TestMethod]
         public void ModName_Value_ReturnsCorrectName()
         {
-            string result = Chen.MinionRetarget.MinionRetargetPlugin.ModName;
+            string result = MinionRetargetPlugin.ModName;
             const string ModName = "ChensMinionRetarget";
 
             Assert.AreEqual(ModName, result);
@@ -28,7 +28,7 @@ namespace ChensMinionRetarget.Tests.MinionRetarget
         [TestMethod]
         public void ModGuid_Value_ReturnsCorrectGuid()
         {
-            string result = Chen.MinionRetarget.MinionRetargetPlugin.ModGuid;
+            string result = MinionRetargetPlugin.ModGuid;
             const string ModGuid = "com.Chen.ChensMinionRetarget";
 
             Assert.AreEqual(ModGuid, result);
