@@ -32,7 +32,7 @@ namespace Chen.MinionRetarget
 #if DEBUG
             "0." +
 #endif
-            "1.0.6";
+            "1.0.7";
 
         /// <summary>
         /// This mod's name.
@@ -63,7 +63,7 @@ namespace Chen.MinionRetarget
             {
                 Vector3 targetPosition = obeyComponent.target.transform.position;
                 Vector3 selfPosition = self.gameObject.transform.position;
-                if (skillDriverEval.dominantSkillDriver.maxDistanceSqr < (targetPosition - selfPosition).sqrMagnitude && self.HasLOS(targetPosition))
+                if (skillDriverEval.dominantSkillDriver.maxDistanceSqr > (targetPosition - selfPosition).sqrMagnitude && self.HasLOS(targetPosition))
                 {
                     self.currentEnemy.gameObject = obeyComponent.target;
                     self.currentEnemy.bestHurtBox = self.GetBestHurtBox(obeyComponent.target);
