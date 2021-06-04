@@ -17,7 +17,7 @@ Take note that assigning a priority target for minions **does not force them to 
 
 ## Installation
 
-Use **[r2modman](https://thunderstore.io/package/ebkr/r2modman/)** mod manager to install this mod.
+Use **[Thunderstore Mod Manager](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager)** to install this mod.
 
 If one does not want to use a mod manager, then get the DLL from **[Thunderstore](https://thunderstore.io/package/Chen/ChensMinionRetarget/)**.
 
