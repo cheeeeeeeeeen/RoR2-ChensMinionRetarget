@@ -32,7 +32,7 @@ namespace Chen.MinionRetarget
 #if DEBUG
             "0." +
 #endif
-            "1.0.7";
+            "1.0.8";
 
         /// <summary>
         /// This mod's name.
@@ -58,17 +58,18 @@ namespace Chen.MinionRetarget
         private BaseAI.SkillDriverEvaluation BaseAI_EvaluateSkillDrivers(On.RoR2.CharacterAI.BaseAI.orig_EvaluateSkillDrivers orig, BaseAI self)
         {
             BaseAI.SkillDriverEvaluation skillDriverEval = orig(self);
-            Obedience obeyComponent = self.gameObject.GetComponent<Obedience>();
-            if (obeyComponent && obeyComponent.target)
+            if (self && self.gameObject && skillDriverEval.dominantSkillDriver)
             {
-                Vector3 targetPosition = obeyComponent.target.transform.position;
-                Vector3 selfPosition = self.gameObject.transform.position;
-                if (skillDriverEval.dominantSkillDriver.maxDistanceSqr > (targetPosition - selfPosition).sqrMagnitude && self.HasLOS(targetPosition))
+                Obedience obeyComponent = self.gameObject.GetComponent<Obedience>();
+                if (obeyComponent && obeyComponent.target)
                 {
-                    self.currentEnemy.gameObject = obeyComponent.target;
-                    self.currentEnemy.bestHurtBox = self.GetBestHurtBox(obeyComponent.target);
-                    self.leader.gameObject = self.currentEnemy.gameObject;
-                    self.leader.bestHurtBox = self.currentEnemy.bestHurtBox;
+                    Vector3 targetPosition = obeyComponent.target.transform.position;
+                    Vector3 selfPosition = self.gameObject.transform.position;
+                    if (skillDriverEval.dominantSkillDriver.maxDistanceSqr > (targetPosition - selfPosition).sqrMagnitude && self.HasLOS(targetPosition))
+                    {
+                        self.leader.gameObject = self.currentEnemy.gameObject = obeyComponent.target;
+                        self.leader.bestHurtBox = self.currentEnemy.bestHurtBox = self.GetBestHurtBox(obeyComponent.target);
+                    }
                 }
             }
             return skillDriverEval;

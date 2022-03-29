@@ -2,3 +2,4 @@
 
 # IDE1006: Naming Styles
 dotnet_diagnostic.IDE1006.severity = silent
+dotnet_diagnostic.Publicizer001.severity=silent
