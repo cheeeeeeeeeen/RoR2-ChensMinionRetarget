@@ -27,6 +27,10 @@ If one does not want to use a mod manager, then get the DLL from **[Thunderstore
 
 ## Changelog
 
+**1.0.8**
+- Remove tests to reduce complexity for newer maintainers.
+- Switch to nuget providers.
+
 **1.0.7**
 - Thanks to KingEnderBrine, a bad conditional bug was found. Mod is also updated so that it works on the latest version of the game.
 
