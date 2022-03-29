@@ -1,10 +1,7 @@
-![Version](https://img.shields.io/badge/Version-1.0.7-orange)
-![Build](https://github.com/cheeeeeeeeeen/RoR2-ChensMinionRetarget/workflows/Build/badge.svg)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Support Chen](https://img.shields.io/badge/Support-Chen-ff69b4)](https://ko-fi.com/cheeeeeeeeeen)
-
+![Version](https://img.shields.io/badge/Version-1.0.8-orange)
 [![GitHub issues](https://img.shields.io/github/issues/cheeeeeeeeeen/RoR2-ChensMinionRetarget)](https://github.com/cheeeeeeeeeen/RoR2-ChensMinionRetarget/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/cheeeeeeeeeen/RoR2-ChensMinionRetarget)](https://github.com/cheeeeeeeeeen/RoR2-ChensMinionRetarget/pulls)
+[![Support Chen](https://img.shields.io/badge/Support-Chen-ff69b4)](https://ko-fi.com/cheeeeeeeeeen)
 ![Maintenance Status](https://img.shields.io/badge/Maintenance-Inactive-orange)
 
 # Chen's Minion Retarget
